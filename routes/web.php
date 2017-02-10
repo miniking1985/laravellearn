@@ -22,3 +22,15 @@ Route::get('/home', 'HomeController@index');
 Route::get('/go', function(){
     echo "haha";
 });
+
+Route::get('/test','Test@index');
+
+##视图测试1
+Route::get('/test1',function(){
+   return view('test1'); 
+});
+##视图测试2
+Route::get('/test2',function(){
+    return view('test2');
+    
+});

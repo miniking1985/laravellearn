@@ -15,6 +15,9 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         Schema::defaultStringLength(191);
+        //
+        //视图间共享数据
+        view()->share('sitename','Laravel school');
     }
 
     /**
